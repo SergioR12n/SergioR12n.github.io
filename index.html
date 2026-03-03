@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sergio Rincón | Ingeniero Mecatrónico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fc;
+            color: #1f2937;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 8%;
+            background: white;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2563eb;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #2563eb;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 8%;
+            min-height: 90vh;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn-secondary {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero img {
+            width: 320px;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            margin-top: 50px;
+        }
+
+        .cv-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .cv-subtitle {
+            font-size: 22px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2563eb;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .cv-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        .cv-card h4 {
+            margin-bottom: 8px;
+        }
+
+        .cv-place {
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .cv-card ul {
+            padding-left: 18px;
+            color: #6b7280;
+        }
+
+        .cv-download {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Sergio Rincón</h1>
+    <ul>
+        <li><a href="#about">Inicio</a></li>
+        <li><a href="#skills">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="about">
+    <div class="hero-text">
+        <h2>Ingeniero Mecatrónico & Desarrollador .NET</h2>
+        <p>
+            Soy ingeniero mecatrónico con una pasión por la programación y la automatización.
+            Con experiencia en C#, Python y control de sistemas, me especializo en crear soluciones 
+            eficientes para problemas complejos.
+        </p>
+        <div class="buttons">
+            <a href="#projects" class="btn-primary">Ver Proyectos</a>
+            <a href="#cv" class="btn-secondary">Ver CV</a>
+        </div>
+    </div>
+
+    <img src="assests/yo.jpg" alt="Foto profesional">
+</section>
+
+<section id="skills">
+
+    <h2 class="section-title">Stack Técnico</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>C# & .NET</h3>
+            <p>Desarrollo de aplicaciones de escritorio con WPF y WinForms.</p>
+        </div>
+        <div class="card">
+            <h3>Python</h3>
+            <p>Simulación de sistemas, integración backend y análisis de datos.</p>
+        </div>
+        <div class="card">
+            <h3>Control & Automatización</h3>
+            <p>Modelado, funciones de transferencia y simulación de sistemas dinámicos.</p>
+        </div>
+        <div class="card">
+            <h3>SQLite & Bases de Datos</h3>
+            <p>Diseño de bases de datos locales para aplicaciones empresariales.</p>
+        </div>
+        <div class="card">
+            <h3>Control industrial</h3>
+            <p>
+                Implementación de sistemas de control con PLCs, microcontroladores y SCADA.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="cv">
+    <h2 class="section-title" style="text-align:center;">Curriculum Vitae</h2>
+
+    <div class="cv-container">
+
+        <!-- Educación -->
+        <div>
+            <h3 class="cv-subtitle">Educación</h3>
+
+            <div class="cv-card">
+                <h4>Ingeniería Mecatrónica</h4>
+                <p class="cv-place">Universidad de Pamplona 2025</p>
+                <p>Formación en automatización industrial, control de sistemas dinámicos,
+                programación y modelado matemático.</p>
+            </div>
+
+            <div class="cv-card">
+                <h4>Asistencia administrativa</h4>
+                <p class="cv-place">SENA 2018</p>
+                <p>Formación en gestión administrativa, atención al cliente y procesos empresariales.</p>
+            </div>
+
+            <div class="cv-card">
+                <h4>Certificación en Diseño Web Responsivo</h4>
+                <p class="cv-place">freeCodeCamp 2024</p>
+                <p>Desarrollo de interfaces modernas con HTML y CSS.</p>
+            </div>
+
+            
+        </div>
+
+        <!-- Experiencia -->
+        <div>
+            <h3 class="cv-subtitle">Experiencia & Proyectos</h3>
+
+
+            <div class="cv-card">
+                <h4>TRANSCANI S.A. – Sistema web de gestión de mantenimiento (Yopal)</h4>
+                <p class="cv-place">Aplicación web con Django y PostgreSQL | Septiembre de 2025 - Enero 2026</p>
+                <p>
+                    Desarrollo de plataforma web con Django y PostgreSQL para la gestión integral de
+                    mantenimientos vehiculares. Implementación de sistema de trazabilidad, control de
+                    órdenes de trabajo, historial de intervenciones y generación de reportes. Despliegue en
+                    Railway con arquitectura escalable, respaldo automático y ambiente seguro de producción.
+                </p>
+            </div>
+
+            <div class ="cv-card">
+                <h4>DYNAMIC3 – Software educativo (Universidad de Pamplona)</h4>
+                <p class="cv-place">Simulación de sistemas dinámicos con Python | Enero 2025 - Agosto 2025</p>
+                <p>
+                    Desarrollo de aplicación multiplataforma en C#, Python y Firebase para simulación interactiva de
+                    sistemas de control. Implementación de simuladores de respuesta temporal, análisis de estabilidad
+                    y comportamiento dinámico de sistemas de primer y segundo orden. Plataforma colaborativa con
+                    foros técnicos integrados.
+                </p>
+            </div>
+
+            <div class="cv-card">
+                <h4>Planta piloto de control de nivel con PLC SIEMENS s7-1200</h4>
+                <p class="cv-place">Implementación de control de nivel con PLC | Septiembre 2024 - Diciembre 2024</p>
+                <p>
+                    Diseño e implementación de planta piloto para control de nivel utilizando PLC SIEMENS s7-1200. 
+                    Configuración de hardware, programación en lenguaje ladder y simulación de procesos industriales. 
+                    Integración de sensores, actuadores y sistema SCADA para monitoreo en tiempo real y optimización del control.
+                </p>
+            </div>
+
+            <div class="cv-card">
+                <h4>Automatización de máquina de amarres</h4>
+                <p class="cv-place">Automatización industrial con ESP32 | Septiembre 2024 - Diciembre 2024</p>
+                <p>
+                    Diseño e implementación de sistema automatizado basado en microcontrolador ESP32 para
+                    optimización de procesos productivos. Integración de sensores, actuadores y lógica de
+                    control que incrementó la eficiencia operativa y redujo errores manuales. Aplicación de
+                    principios de automatización industrial para mejorar la repetibilidad y trazabilidad del
+                    proceso.
+                </p>
+            </div>
+
+            <div class="cv-card">
+                <h4>Diseño de decoraciones electrónicas automatizadas – Cristian Carreño Home</h4>
+                <p class="cv-place">Decoraciones electrónicas con Arduino | Febrero 2024 - Mayo 2024</p>
+                <p>
+                    Desarrollo de soluciones electrónicas personalizadas con sistemas de control automático,
+                    iluminación LED programable, sensores de movimiento y proximidad. Implementación de
+                    secuencias automatizadas y control remoto mediante microcontroladores.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cv-download">
+        <a href="assets/CV_Sergio_Rincon.pdf" class="btn-primary" download>
+            Descargar CV en PDF
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sergio Rincón – Portafolio Profesional
+</footer>
+
+</body>
+</html>
